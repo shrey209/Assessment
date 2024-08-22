@@ -35,15 +35,15 @@
    ```json
    {
      "page": 0,
-     "size": 0,
+     "size": 1,
      "location": "string",
      "manufacturing_process": "string",
      "nature_of_Business": "string"
    }
    ```
 
-   - **Page:** Defines the page number.
-   - **Size:** Defines the number of records per page.
+   - **Page:** Defines the page number(Default value is 0).
+   - **Size:** Defines the number of records per page(Default value is 100).
    - **Location:** City name.
    - **Manufacturing Process:** Values can be `moulding`, `3d_printing`, `casting`, or `coating`.
    - **Nature of Business:** Values can be `small_scale`, `medium_scale`, or `large_scale`.
