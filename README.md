@@ -20,7 +20,11 @@
 
 3. **Access Swagger UI:**
 
-   Open your browser and go to: [http://localhost:8080/swagger-ui.html](http://localhost:8080/swagger-ui.html)
+   **Open your browser and go to:**
+
+   **[http://localhost:8080/swagger-ui.html](http://localhost:8080/swagger-ui.html)**
+
+   This will allow you to explore the API and see all available endpoints.
 
 ### Using Postman
 
@@ -86,9 +90,50 @@
      }
      ```
 
+## Running the Application Locally
+
+### Using Eclipse
+
+1. **Clone the Repository:**
+
+   Clone the repository to your local machine:
+
+   ```bash
+   git clone https://github.com/shrey209/Assessment.git
+   ```
+
+2. **Open the Project in Eclipse:**
+
+   - Open Eclipse.
+   - Go to `File` > `Import`.
+   - Select `Existing Projects into Workspace` and click `Next`.
+   - Click `Browse` and navigate to the `Assessment` folder.
+   - Select the folder and click `Finish`.
+
+3. **Run the Application:**
+
+   - Right-click on the project in Eclipse.
+   - Select `Run As` > `Java Application`.
+
+### Running the JAR File Directly
+
+1. **Download the JAR File:**
+
+   The JAR file is provided in the repository under the `bin` directory.
+
+2. **Run the JAR File:**
+
+   Use the following command to run the JAR file:
+
+   ```bash
+   java -jar path/to/your/assignment.jar
+   ```
+
+   Replace `path/to/your/assignment.jar` with the actual path to the JAR file in the `bin` directory.
+
 ## API Details
 
-- The API is built using H2 in-memory database, and it has been seeded with 70 random records for testing.
+- The API is built using H2 in-memory database and has been seeded with 70 random records for testing.
 - The API is versatile and can handle search queries based on any combination of the provided fields.
 - Proper exception handling is implemented to ensure smooth operation.
 
@@ -112,6 +157,4 @@ The API returns the content and the number of records (size of content) as shown
 }
 ```
 
---- 
-
-This README provides a clear guide on how to use the application, both through Docker and Postman, and includes examples and output to help users understand the API functionality.
+---
