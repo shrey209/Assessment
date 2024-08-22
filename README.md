@@ -1,5 +1,4 @@
 
-
 # Makersharks Assessment
 
 ## How to Run
@@ -35,18 +34,20 @@
    ```json
    {
      "page": 0,
-     "size": 1,
+     "size": 0,
      "location": "string",
      "manufacturing_process": "string",
      "nature_of_Business": "string"
    }
    ```
 
-   - **Page:** Defines the page number(Default value is 0).
-   - **Size:** Defines the number of records per page(Default value is 100).
+   - **Page:** Defines the page number.
+   - **Size:** Defines the number of records per page.
    - **Location:** City name.
    - **Manufacturing Process:** Values can be `moulding`, `3d_printing`, `casting`, or `coating`.
    - **Nature of Business:** Values can be `small_scale`, `medium_scale`, or `large_scale`.
+
+   **Note:** Search queries are case-insensitive.
 
 2. **Example Search Queries:**
 
@@ -135,6 +136,7 @@
 
 - The API is built using H2 in-memory database and has been seeded with 70 random records for testing.
 - The API is versatile and can handle search queries based on any combination of the provided fields.
+- **Search queries are case-insensitive.**
 - Proper exception handling is implemented to ensure smooth operation.
 
 ### Example Output
@@ -156,5 +158,3 @@ The API returns the content and the number of records (size of content) as shown
   "totalNumberOfRecordsInteger": 1
 }
 ```
-
----
